@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 15vh;
+    min-height: 150px;
 }
 
 .left-nav{
@@ -344,7 +344,7 @@ footer{
         display: block;
         position: absolute;
         right: 5%;
-        top: 4%;
+        top: 50px;
         font-size: 2.3rem;
     }
     .burgerMenu:hover{
