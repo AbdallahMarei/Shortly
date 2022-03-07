@@ -17,17 +17,13 @@ shortForm.addEventListener("submit", function(e){
         urlEnteredIncorreclty("Please Enter a valid url");
         return
     } 
-    urlShort(urlInput.value);
-    
-    
+    urlShort(urlInput.value);  
 });
 
 
 const urlShort = async(url) => {
     const res = await fetch(`https://www.shareaholic.com/v2/share/shorten_link?apikey=8943b7fd64cd8b1770ff5affa9a9437b&url=${url}`);
     const result = await res.json();
-    console.log(url)
-    console.log(result.data)
     if(!localStorage.getItem("short-links")){
         let shortLinks = [];
         let newObjUrl = {
