@@ -64,7 +64,6 @@ function urlEnteredSuccessfully(){
     showError.style.color = "#2bd0d0";
     showErrorMobile.innerHTML = "Url shortened successfully";
     showErrorMobile.style.color = "#2bd0d0";
-    urlInput.value = "";
 };
 
 
