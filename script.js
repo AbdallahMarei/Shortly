@@ -75,7 +75,7 @@ function urlEnteredIncorreclty(msg) {
  * @param {object} obj object that contains the lonk url and the short url
  */
 function displayShortenedLinks(obj) {
-    showLinks.insertAdjacentHTML("beforeend", `<div class="short-links-div">
+    showLinks.insertAdjacentHTML("afterbegin", `<div class="short-links-div">
         <span class="show-links-div-link">${obj.link}</span>
         <hr class="short-links-line" />
         <div class="individualShortLink">
