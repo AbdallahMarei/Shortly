@@ -352,7 +352,7 @@ footer {
     display: block;
     font-size: 39px;
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 50px;
   }
   .burgerMenu:hover {
@@ -367,10 +367,10 @@ footer {
     background-color: rgb(126, 0, 126);
     border-radius: 10px;
     color: rgb(255, 255, 255);
-    left: 8%;
+    left: 10%;
     position: absolute;
     top: 120px;
-    width: 85%;
+    width: 80%;
     z-index: 1000;
   }
   .nav-menu ul {
