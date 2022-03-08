@@ -85,27 +85,13 @@ function displayShortenedLinks(obj) {
       </div>`)
 };
 
-/**
- * Displays all the links from local storage on page load
- */
-function displayShortenedLinksOnLoad() {
-    let linksFromLocal = JSON.parse(localStorage.getItem("short-links"));
-    linksFromLocal.forEach(link => {
-        showLinks.insertAdjacentHTML("afterend", `<div class="short-links-div">
-        <span class="show-links-div-link">${link.link}</span>
-        <hr />
-        <div class="individualShortLink">
-          <a href="${link.shortLink}" target="_blank">${link.shortLink}</a>
-          <button class="copy-link">Copy</button>
-        </div>
-      </div>`)
-    })
-};
-
 
 window.onload = () => {
     if (localStorage.getItem("short-links")) {
-        displayShortenedLinksOnLoad();
+        let linksFromLocal = JSON.parse(localStorage.getItem("short-links"));
+        linksFromLocal.forEach(link => {
+            displayShortenedLinks(link);
+        })
     };
 };
 

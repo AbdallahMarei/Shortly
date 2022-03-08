@@ -11,7 +11,9 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   min-height: 150px;
+  width: 80%;
 }
 
 .left-nav {
@@ -67,8 +69,8 @@
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  margin-bottom: 9%;
-  margin-left: 14%;
+  margin-bottom: 50px;
+  margin-left: 10%;
 }
 .left-hero-heading1 {
   font-size: 70px;
@@ -116,6 +118,8 @@
 }
 .shorten {
   position: relative;
+  margin: 0 auto;
+  width: 80%;
 }
 #shortener-form {
   background-color: rgb(126, 0, 126);
@@ -181,7 +185,7 @@
   padding: 20px;
   width: 100%;
 }
-.short-links-div-link {
+.show-links-div-link {
   overflow: hidden;
   text-overflow: clip;
   transform: translateY(25%);
@@ -209,8 +213,10 @@
   display: grid;
   gap: 32px;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
   padding-bottom: 70px;
   position: relative;
+  width: 80%;
 }
 
 .card-stat {
@@ -382,7 +388,7 @@ footer {
     height: fit-content;
   }
   .left-hero {
-    margin-left: 5%;
+    margin-left: 10%;
   }
   .right-hero {
     text-align: right;
@@ -408,7 +414,7 @@ footer {
   .blue-line {
     border-left: 5px solid rgb(128, 255, 213);
     border: none;
-    height: 600px;
+    height: 650px;
     left: 49.75%;
     top: 0;
     width: 0.5%;
@@ -471,6 +477,7 @@ footer {
     position: relative;
   }
   .left-hero {
+    margin-bottom: 15%;
     margin-left: 0;
     text-align: center;
   }
@@ -495,6 +502,9 @@ footer {
     margin: 0;
     width: 100%;
   }
+  .blue-line{
+    height: 80%;
+  }
   .individualShortLink {
     display: flex;
     flex-direction: column;
@@ -504,9 +514,6 @@ footer {
   }
   .short-links-div-link {
     width: 100%;
-  }
-  .left-nav .logo {
-    margin-left: 16px;
   }
   .boost-btn {
     width: 60%;
