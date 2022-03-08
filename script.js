@@ -71,6 +71,17 @@ function urlEnteredIncorreclty(msg) {
 };
 
 /**
+ * 
+ * @param {object} e the event that occurs on the element
+ */
+function copyLink(e) {
+    e.target.innerText = 'Copied';
+    e.target.style.background = 'green';
+    let copiedLink = e.target.parentElement.firstElementChild.href;
+    navigator.clipboard.writeText(copiedLink);
+}
+
+/**
  * Displays the short links that user inputted
  * @param {object} obj object that contains the lonk url and the short url
  */
@@ -80,7 +91,7 @@ function displayShortenedLinks(obj) {
         <hr class="short-links-line" />
         <div class="individualShortLink">
           <a class="new-shortened-link" href="${obj.shortLink}" target="_blank">${obj.shortLink}</a>
-          <button class="copy-link">Copy</button>
+          <button onclick="copyLink(event)" class="copy-link">Copy</button>
         </div>
       </div>`)
 };
@@ -102,14 +113,5 @@ shortForm.addEventListener("submit", function (e) {
         return
     }
     shortenUrl(urlInput.value);
-});
-
-showLinks.addEventListener("click", function (e) {
-    if (e.target.classList.contains("copy-link")) {
-        e.target.innerText = 'Copied';
-        e.target.style.background = 'green';
-        let copiedLink = e.target.parentElement.firstElementChild.href;
-        navigator.clipboard.writeText(copiedLink);
-    };
 });
 
