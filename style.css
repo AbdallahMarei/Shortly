@@ -400,6 +400,7 @@ footer {
   }
   .right-hero-image {
     position: relative;
+    width: 120%;
   }
   .cards {
     grid-template-columns: 1fr;
