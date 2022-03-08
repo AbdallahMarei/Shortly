@@ -71,7 +71,7 @@ function urlEnteredIncorreclty(msg) {
 };
 
 /**
- * 
+ * Copy the shortened link to the clipboard
  * @param {object} e the event that occurs on the element
  */
 function copyLink(e) {
