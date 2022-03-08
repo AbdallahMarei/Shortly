@@ -77,9 +77,9 @@ function urlEnteredIncorreclty(msg) {
 function displayShortenedLinks(obj) {
     showLinks.insertAdjacentHTML("afterend", `<div class="short-links-div">
         <span class="show-links-div-link">${obj.link}</span>
-        <hr />
+        <hr class="short-links-line" />
         <div class="individualShortLink">
-          <a href="${obj.shortLink}" target="_blank">${obj.shortLink}</a>
+          <a class="new-shortened-link" href="${obj.shortLink}" target="_blank">${obj.shortLink}</a>
           <button class="copy-link">Copy</button>
         </div>
       </div>`)

@@ -192,6 +192,9 @@
   white-space: nowrap;
   width: 40%;
 }
+.short-links-line{
+  display: none;
+}
 .adv-stat {
   align-items: center;
   display: flex;
@@ -201,6 +204,7 @@
 }
 .adv-stat-heading2 {
   font-weight: 800;
+  margin-bottom: 10px;
 }
 .adv-stat-paragraph {
   color: rgb(122, 122, 122);
@@ -323,13 +327,14 @@ footer {
 .footer-lists li {
   cursor: pointer;
   list-style-type: none;
-  padding: 0;
+  padding: 5px 0;
 }
 .footer-lists li:hover {
   color: rgb(129, 255, 213);
 }
 .footer-lists p {
   font-weight: 700;
+  margin: 10px 0;
 }
 .social-icons i {
   color: rgb(255, 255, 255);
@@ -414,14 +419,14 @@ footer {
   .blue-line {
     border-left: 5px solid rgb(128, 255, 213);
     border: none;
-    height: 650px;
+    height: 600px;
     left: 49.75%;
     top: 0;
     width: 0.5%;
   }
   .adv-stat-paragraph {
     margin-bottom: 16px;
-    width: 80%;
+    width: 60%;
   }
   .input-link {
     height: 70px;
@@ -498,6 +503,9 @@ footer {
   .short-links-div {
     flex-direction: column;
   }
+  .short-links-line{
+    display: inline-block;
+  }
   .copy-link {
     margin: 0;
     width: 100%;
@@ -509,11 +517,12 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  .individualShortLink a {
-    margin-bottom: 16px;
-  }
-  .short-links-div-link {
+  .show-links-div-link {
+    margin-bottom: 5px;
     width: 100%;
+  }
+  .new-shortened-link{
+    margin: 5px 0;
   }
   .boost-btn {
     width: 60%;
