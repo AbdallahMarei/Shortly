@@ -112,4 +112,3 @@ showLinks.addEventListener("click", function (e) {
         navigator.clipboard.writeText(copiedLink);
     }
 })
-
