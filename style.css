@@ -50,8 +50,9 @@
 .sign-up-btn {
   background-color: rgb(128, 255, 212);
   border-radius: 30px;
-  color: rgb(255, 255, 255);
   border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
   padding: 15px;
 }
 .sign-up-btn:hover {
@@ -83,7 +84,6 @@
   line-height: 2;
 }
 .get-started {
-  cursor: pointer;
   font-size: 20px;
   margin-top: 20px;
   width: 100%;
@@ -93,6 +93,7 @@
   border-radius: 30px;
   border: none;
   color: rgb(255, 255, 255);
+  cursor: pointer;
   padding: 15px;
   width: 60%;
 }
@@ -290,6 +291,7 @@
   border-radius: 30px;
   border: none;
   color: rgb(255, 255, 255);
+  cursor: pointer;
   margin: 0 auto;
   padding: 15px;
   width: 30%;
@@ -467,7 +469,6 @@ footer {
   }
   #shortener-form {
     grid-template-columns: 1fr;
-    width: 100%;
   }
   .input-link {
     margin-bottom: 8px;
