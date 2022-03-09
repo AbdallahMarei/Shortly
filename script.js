@@ -50,7 +50,7 @@ const shortenUrl = async (url) => {
  * Displays a span underneath the input with a success message
  */
 function urlEnteredSuccessfully() {
-    urlInput.style.borderColor = "green";
+    urlInput.style.borderColor = "#2bd0d0";
     showError.innerHTML = "Url shortened successfully";
     showError.style.color = "#2bd0d0";
     showErrorMobile.innerHTML = "Url shortened successfully";
